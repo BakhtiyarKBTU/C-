@@ -1,1 +1,1 @@
-Bakhtiyar Bekbergen Kazaks-British Technical University (Sabo)
+Bakhtiyar Bekbergen. Kazaks-British Technical University (Sabo)

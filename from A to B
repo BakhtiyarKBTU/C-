@@ -1,0 +1,38 @@
+/* От A до B */
+
+#include <bits/stdc++.h>
+
+using namespace std;
+
+
+string toString(int n){
+	string t ="";
+	while(n > 0){
+		t += char( n % 10 + '0');
+		n /= 10;
+	}
+	reverse(t.begin(), t.end());
+	return t;
+}
+
+
+
+string fromAtoB(int a, int b){
+	if(a > b){
+		if(a == b){
+			return toString(a);
+		}
+		return toString(a) + " " + fromAtoB(a - 1, b);
+	}
+	else{
+		if(a == b) return toString(a);
+		return toString(a) + " " + fromAtoB(a + 1, b);
+	}
+}
+
+int main(){
+	int a, b;
+	cin >> a >> b;
+	cout << fromAtoB(a,b);
+	return 0;
+}

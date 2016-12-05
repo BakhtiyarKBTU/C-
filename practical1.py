@@ -1,6 +1,4 @@
 from selenium import webdriver 
-#from selenium.webdriver.common.keys import Keys 
-#from selenium.webdriver.common.desired_capabilities import DesiredCapabilities 
 import xlsxwriter 
 
 workbook = xlsxwriter.Workbook('myDB.xlsx') 
@@ -29,8 +27,4 @@ for i in range(0, 4):
 		worksheet.write_column(0, i, dates[i].text) 
 	workbook.close() 
 
-#for i in range(0, len(authors)): 
-	#if i<1: 
-		#print(title[i].text) 
-			#for j in range(0, 6): 
-				# print("%s %s" % (authors[j].text, comments[j].text))
+
